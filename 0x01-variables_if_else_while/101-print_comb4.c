@@ -14,7 +14,7 @@ int main(void)
 
 	for (hundreds = '0'; hundreds <= '0'; hundreds++)
 	{
-		for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
+		for (tens = '0'; tens <= '9'; tens++)
 		{
 			for (ones = '0'; ones <= '9'; ones++)
 			{
@@ -24,7 +24,8 @@ int main(void)
 					putchar(hundreds);
 					putchar(tens);
 					putchar(ones);
-					if (!(ones == '9' && tens == '8'))/*addes comma and space*/
+					if (!(ones == '9' && hundreds == '7' &&
+								tens == '8'))/*adds comma and spaces*/
 					{
 						putchar(',');
 						putchar(' ');
