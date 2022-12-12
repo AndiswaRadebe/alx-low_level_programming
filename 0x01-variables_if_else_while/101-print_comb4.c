@@ -1,35 +1,25 @@
 #include <stdio.h>
 
-
 /**
  * main - prints all possible different combinations of three digits
- * Numbers must be separated by ,, followed by a space
- * The three digits must be different
- * Print only the smallest combination of three digits
- * Numbers should be printed in ascending order, with three digits
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-	int ones = '0';
-	int tens = '0';
-	int hundreds = '0';
+	int n, m, l;
 
-	for (hundreds = '0'; hundreds <= '0'; hundreds++)
+	for (n = 48; n < 58; n++)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		for (m = 49; m < 58; m++)
 		{
-			for (ones = '0'; ones <= '9'; ones++)
+			for (l = 50; l < 58; l++)
 			{
-				if (!((ones == tens) || (tens == hundreds) ||
-							(tens > ones) || (hundreds > tens))) /*eliminates repitition*/
+				if (l > m && m > n)
 				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '9' && hundreds == '7' &&
-								tens == '8')) /*adds comma and spaces*/
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 					{
 						putchar(',');
 						putchar(' ');
