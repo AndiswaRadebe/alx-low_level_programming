@@ -1,9 +1,7 @@
-#include <stdio.h>
-
-void _puts(char *);
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -11,7 +9,7 @@ int main(void)
 {
 	char *str;
 
-	str = "Holberton!";
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 	_puts(str);
 	return (0);
 }
